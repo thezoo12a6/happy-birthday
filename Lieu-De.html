@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./css/style-lieu.css">
+    <link rel="preload" as="image" href="./img/cake.gif">
+    <link rel="preload" as="audio" href="./audio/Romantic-Happy-Birthday.mp3">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/duration.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/utc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/howler.core.js"></script>
+
+    <script src="https://kit.fontawesome.com/15abc3df0d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <div class="countdown">
+            00:00:00
+        </div>
+        <!-- /* From Uiverse.io by Alderx */ -->
+        <div class="heartbeatloader">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 400" height="100%" width="100%" class="svgdraw">
+                <path stroke="black" stroke-width="4" fill="transparent" d="M 0 200 l 40 0 l 5 -40 l 5 40 l 10 0 l 5 15 l 10 -140 l 10 220 l 5 -95 l 10 0 l 5 20 l 5 -20 l 30 0" class="path"></path>
+            </svg>
+            <div class="innercircle"></div>
+            <div class="outercircle"></div>
+        </div>
+
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="card" id="card">
+        <div class="card-face card-front">
+            <div class="card-content">
+                <!-- <img src="https://66.media.tumblr.com/e18c63bdefd951eb243e67d94dab2f7e/tumblr_phsco7aBJG1vq64mxo4_r1_1280.jpg" /> -->
+                <img src="./img/cake.gif" />
+                <span class="tap-hint" id="tap-hint"></span>
+            </div>
+        </div>
+        <div class="card-face card-back">
+            <div class="card-content">
+                <div class="greeting-top">25.05.2026</div>
+                <div class="greeting-center">Dear,</div>
+                <div class="greeting-message">
+                    <div class="greeting-content-wrapper">
+                        <div class="greeting-content" id="wish">
+                            <!-- example -->
+                            <!-- For you at Christmas time: A wish for happiness, warmth, and love. -->
+                        </div>
+                    </div>
+                    <div class="message-navigation">
+                        <div class="nav-text" id="prevMessage">
+                            ← quay lại
+                        </div>
+                        <div class="nav-text" id="nextMessage">
+                            đọc tiếp →
+                        </div>                    
+                    </div>
+                </div>
+                <div class="signature">
+                    Thân ái và quyết thắng,
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            made with love by Lucas
+        </p>
+    </div>
+    <div id="snow"></div>
+    <button id="muteaudio">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+    <script src="./js/script-lieu.js"></script>
+    <script src="./js/firefly.js"></script>
+</body>
+
+</html>
